@@ -102,6 +102,11 @@ header h2 {
   margin-bottom: 40px;
 }
 
+.caption {
+  font-size: 12px;
+  font-weight: bold;
+}
+
 a.button {
   -moz-border-radius: 30px;
   -webkit-border-radius: 30px;                     
