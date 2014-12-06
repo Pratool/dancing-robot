@@ -21,7 +21,6 @@ ser = serial.Serial('COM6', 9600, timeout=0)
 face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 eye_cascade = cv2.CascadeClassifier('haarcascade_eye.xml')
 mouthCascade = cv2.CascadeClassifier('Mouth.xml')
-# smile_cascade = cv2.CascadeClassifier('haarcascade_smile.xml')
 
 numberOfFaces = 0
 smileExists = 0
@@ -59,10 +58,6 @@ def detectFaces():
                 #center of shape, rectangle dimensions, color, line thickness
                 #cv2.rectangle (img, vertex1, vertex across from 1, color, something)
                 faceRect = cv2.rectangle(frame,(x,y),(x+w,y+h),(255,0,0),0)
-                # print y
-                # print y+h
-                # print x
-                # print x+w
                 #need to readjust the crop to reflect proportional things
                 roi_gray = gray[6*(y/5):y+h,x+20:x+w-20]
                 # roi_gray = gray[y+40:y+h-10,x+20:x+w-20]
@@ -114,38 +109,10 @@ def detectFaces():
                                     mvals = (ex, ey, ew, eh)
                                     cv2.rectangle(roi_color,(ex,ey),(ex+ew,ey+eh),(0,255,0),2)
 
-                    
-                # print roi_gray
-                # x_upperbound = x+ 2*(w/3)
-                # cropped_face = roi_gray[y_upperbound:y+h, x_upperbound:x+w]
-                # print cropped_face
-                #roi_color = frame[y:y+h, x:x+w]
-                #print "here"
-                #code to run smile detection (since smiles are on faces)
-                # smiles = smile_cascade.detectMultiScale(
-                #     roi_gray, 
-                #     scaleFactor=1.1, 
-                #     minNeighbors=10, 
-                #     minSize=(20,20),
-                #     maxSize=(80, 80))
-                # print "i found %s smiles" %len(smiles)
-               
-                # for (sx,sy,sw,sh) in smiles:
-                #     cv2.rectangle(frame,(sx+x,sy+y),(x+sw,y+sh),(0,0,255),0)
-                #     # global roi_gray2
-                #     roi_gray2 = gray[y+sy:y+sh, x+sx:x+sw]
-
-                    # import pdb
-                    # pdb.set_trace()
             cv2.imshow("ROI", roi_gray)
             cv2.imshow('ROI_resized', resized_roi)
-            # cv2.imshow('Cropped face', cropped_face)
-
-                # Display the resulting frame
             
         cv2.imshow('Video', frame)
-        # cv2.imshow('ROI', roi_gray)
-        # cv2.imshow('Cropped face', cropped_face)
     
         if cv2.waitKey(1) & 0xFF == ord('q'):
             ser.close()
