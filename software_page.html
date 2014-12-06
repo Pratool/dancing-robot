@@ -19,34 +19,42 @@
 
         <header>
           <h1>Big Summer Blowout!</h1>
-          <h2>Principles of Engineering Project</h2>
+          <h2>Principles of Engineering Project: Software</h2>
         </header>
 
-        <section id="downloads" class="clearfix">
-          <a href="https://github.com/Pratool/dancing-robot/zipball/master" id="download-zip" class="button"><span>Download .zip</span></a>
-          <a href="https://github.com/Pratool/dancing-robot/tarball/master" id="download-tar-gz" class="button"><span>Download .tar.gz</span></a>
-          <a href="https://github.com/Pratool/dancing-robot" id="view-on-github" class="button"><span>View on GitHub</span></a>
+        <section id="toolbar" class="clearfix">
+          <a href="https://github.com/Pratool/dancing-robot/zipball/master" id="Home" class="button"><span>Home</span></a>
+          <a href="https://github.com/Pratool/dancing-robot/tarball/master" id="Overview" class="button"><span>Overview</span></a>
+          <a href="https://github.com/Pratool/dancing-robot" id="Mechanical" class="button"><span>Mechanical</span></a>
+          <a href="https://github.com/Pratool/dancing-robot" id="Electrical" class="button"><span>Electrical</span></a>
+          <a href="https://github.com/Pratool/dancing-robot" id="Software" class="button"><span>Software</span></a>
+          <a href="https://github.com/Pratool/dancing-robot" id="About" class="button"><span>About</span></a>
         </section>
 
         <hr>
 
         <section id="main_content">
+
+          <h3><a id="software_implement" class="anchor" href="#software_implement" aria-hidden="true"><span class="octicon octicon-link"></span></a>Implementation</h3>
+
+          <p><b>Smile Detector:</b></p>
+
+          <p> OpenCV has a library dedicated to identifying different regions of human faces and smiles.  We incorporated these libraries to create a face and smile detector on a computer.  Essentially the program takes the video feed from a webcam, runs the detector on the images, draws a square around the face and mouth regions, and shows the results in a live window.  To increase the efficiency and accuracy of the mouth detector, we limited it to only analyze the images within the detected face regions.</p>
+
+          <img src="MouthDetection.png" alt="Face and Mouth Detector" style="width:500px;height:500px">
+
+          <p>This beginning iteration worked very well for our purposes and consistently delivered working results.  Occasionally the program would identify faces in the background that were not there and the face detector would only detect them if the person’s face was angled directly toward the camera with some flexibility for faces that were turned slightly away from the camera.  Using this as a starting block, we tried to incorporate the OpenCV smile detector.  However, no matter how much testing or strategies we tried to use, we could not get it to produce any working results.  One of our main strategies was to limit the smile detector to the area within the detected face and later to the lower half of it, but it continued to fail.  We then decided to construct our own smile detector.  </p>
+
+          <p> </p>
+
           <h3>
-<a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span class="octicon octicon-link"></span></a>Software Page</h3>
+          <a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
 
-<p>Software things happened.</p>
+          <p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
 
-<p>Another paragraph!</p>
 
-<h3>
-<a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
 
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
 
-<h3>
-<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="https://help.github.com/pages">https://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
         </section>
 
         <footer>
@@ -54,7 +62,6 @@
           This page was generated by <a href="http://pages.github.com">GitHub Pages</a>. Tactile theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.
         </footer>
 
-        
       </div>
     </div>
   </body>
