@@ -50,7 +50,7 @@
           <p>OpenCV has a library dedicated to identifying different regions of human faces and smiles. We incorporated these libraries (haar_cascade files) to create a face and mouth detector on a computer, using Python. Essentially the program takes the video feed from a webcam, runs the detector on the images, draws a square around the face and mouth regions, and shows the results in a live window. To increase the efficiency and accuracy of the mouth detector, we limited it to only analyze the images within the detected face regions.</p>
 
           <img src="MouthDetection.png" alt="Face and Mouth Detector" style="width:648px;height:509px">
-          <p><h4>Figure 1</h4>: An image from the video feed of the face and mouth detector on three people</p>
+          <h4>Figure 1: An image from the video feed of the face and mouth detector on three people<h4>
 
           <p>This beginning iteration worked very well for our purposes and consistently delivered working results. Occasionally the program would identify faces in the background that were not there and the face detector would only detect them if the person’s face was angled directly toward the camera with some flexibility for faces that were turned slightly away from the camera, but it was working fairly consistently. Using this as a starting block, we attempted to incorporate the OpenCV smile detector. However, no matter how much testing or strategies we tried to use, we could not get it to produce any working results. For example, one of our strategies was to limit the smile detector to the area within the detected face and later to only within the mouth region, but it continued to fail. We then decided to construct our own smile detector.</p>
 
@@ -60,13 +60,13 @@
 
           <!--insert image-->
           <!--<img src="MouthDetection.png" alt="Face and Mouth Detector" style="width:648px;height:509px">-->
-          <p><h4>Figure 2</h4>: The generalized image of a smile that the smile detector uses to compare detected faces to in order to determine if the person is smiling</p>
+          <p><h4>Figure 2: The generalized image of a smile that the smile detector uses to compare detected faces to in order to determine if the person is smiling</h4></p>
 
           <!--<img src="MouthDetection.png" alt="Face and Mouth Detector" style="width:648px;height:509px">-->
-          <p><h4>Figure 3a</h4>: An image from the video feed of the smile detector when a person is not smiling</p>
+          <p><h4>Figure 3a: An image from the video feed of the smile detector when a person is not smiling</h4></p>
 
           <!--<img src="MouthDetection.png" alt="Face and Mouth Detector" style="width:648px;height:509px">-->
-          <p><h4>Figure 3b</h4>: An image from the video feed of the smile detector when a person is smiling</p>
+          <p><h4>Figure 3b: An image from the video feed of the smile detector when a person is smiling</h4></p>
 
           <h4><a id="SD_problems" class="anchor" href="#SD_problems" aria-hidden="true"><span class="octicon octicon-link"></span></a>Potential problems with smile detector:</h4>
 
@@ -75,7 +75,7 @@
           <!--insert image-->
 
           <!--<img src="MouthDetection.png" alt="Face and Mouth Detector" style="width:648px;height:509px">-->
-          <p><h4>Figure 4</h4>: An image from the video feed of the smile detector.  Note how the percentages are different from figure 3b.</p>
+          <p><h4>Figure 4: An image from the video feed of the smile detector.  Note how the percentages are different from figure 3b.</h4></p>
 
           <p>We also found that the background and factors such as lighting affect the smile detection as well. Because of this, we decided to keep these factors constant by always using it in the same place, under the same background and lighting.</p>
 
