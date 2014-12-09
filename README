@@ -1,4 +1,5 @@
 Before running "smile_detector.py" check that the serial port is correctly named in the file.
 
 Upload "pyserial.ino" to an Arduino.
-Run "smile_detector.py"
+Run "smile_detector.py" if on a laptop
+Run "rpi-facedetect.py" if on a Raspberry Pi
