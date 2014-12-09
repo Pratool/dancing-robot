@@ -1,0 +1,4 @@
+Before running "smile_detector.py" check that the serial port is correctly named in the file.
+
+Upload "pyserial.ino" to an Arduino.
+Run "smile_detector.py"
