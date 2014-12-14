@@ -21,19 +21,19 @@
           <h1><a href="http://pratool.github.io/dancing-robot/">Big Summer Blowout!</a></h1>
           <h2>Mechanical System</h2>
         </header>
-		
-		<section id="downloads" class="clearfix">
+    
+    <section id="downloads" class="clearfix">
           <a href="http://pratool.github.io/dancing-robot/mechanical.html" class="button">
-		  <span style="position: relative; left: -20px">Mechanical Systems</span>
-		  </a>
-		  
-		  <a href="http://pratool.github.io/dancing-robot/software_page.html" class="button">
-		  <span style="position: relative; left: -15px">Software Systems</span>
-		  </a>
-		  
-		  <a href="http://pratool.github.io/dancing-robot/integration.html" class="button">
-		  <span style="position: relative; left: -20px; top: -12px">Embedded System & Integration</span>
-		  </a>
+      <span style="position: relative; left: -20px">Mechanical Systems</span>
+      </a>
+      
+      <a href="http://pratool.github.io/dancing-robot/software_page.html" class="button">
+      <span style="position: relative; left: -15px">Software Systems</span>
+      </a>
+      
+      <a href="http://pratool.github.io/dancing-robot/integration.html" class="button">
+      <span style="position: relative; left: -20px; top: -12px">Embedded System & Integration</span>
+      </a>
         </section>
 
         <hr>
@@ -41,48 +41,59 @@
         <section id="main_content">
 <p>This project was an excellent lesson in mechanical design, and opened our eyes to myriad mechanisms that provide various types of motion. We considered many more designs than we used in all of our iterations, ultimately choosing those that provide the desired motion in the simplest way. In the early iterations especially, the Keepon inspired much of our vision and understanding about how to achieve our intended degrees of freedom. However, as we progressed through the project, our goal-set changed and we encountered different mechanisms than those used in the Keepon that were better, for our budget, motions, experience, and available tools.</p>
 
-<h3>Sketch Model</h3>
-<p>Our initial sketch model (unfortunately disposed of before we thought to take a picture of it) was a cardboard box with the flaps cut off and rectangular sections cut out of each side. The bottom of the box became the top, and in this face we cut a small rectangular hole with two slits coming off of two sides of the hole. A stick of cardboard went through this hole, and we stretched two rubber bands through the slit to the bottom of the stick. This allowed the stick to bob up and down, demonstrating Heave, one of our four desired degrees of freedom. Next, we attached three pieces of thread to the bottom of the stick, such that one would pull the stick left-right (yaw), another would pull it forward-back (pitch) and a third would rotate it (roll), rounding out the four degrees of freedom. We used virtually nothing from this model in our first iteration, but it did a good job of demonstrating our desired motions.</p>
+<div>
+<img src="images/scan01-thumb.png">
+<img src="images/scan02-thumb.png">
+<img src="images/scan03-thumb.png">
+<img src="images/scan04-thumb.png">
+<img src="images/scan05-thumb.png">
+<img src="images/scan06-thumb.png">
+<img src="images/scan07-thumb.png">
+<img src="images/scan08-thumb.png">
+</div>
+<span class="caption" style="position: relative; left: 175px">Sketches of potential mechanisms replicating the Keepon</span>
 
-<h3>Design Phases</h3>
+<div style="position: relative; top: 0px"><h3>Sketch Model</h3></div>
+<div style="position: relative; top: 0px"><p>Our initial sketch model (unfortunately disposed of before we thought to take a picture of it) was a cardboard box with the flaps cut off and rectangular sections cut out of each side. The bottom of the box became the top, and in this face we cut a small rectangular hole with two slits coming off of two sides of the hole. A stick of cardboard went through this hole, and we stretched two rubber bands through the slit to the bottom of the stick. This allowed the stick to bob up and down, demonstrating Heave, one of our four desired degrees of freedom. Next, we attached three pieces of thread to the bottom of the stick, such that one would pull the stick left-right (yaw), another would pull it forward-back (pitch) and a third would rotate it (roll), rounding out the four degrees of freedom. We used virtually nothing from this model in our first iteration, but it did a good job of demonstrating our desired motions.</p></div>
 
-<p>We had many different ideas and different input on how to replicate the Keepon motions. We eventually figured that we needed three types of motions. We then came up with various mechanical designs for these three types of motions.
-
-<div style="position: relative; top: -20px"><img src='images/scan01.png' width='250px'></div>
-<div style="position: relative; top: -250px; left: 260px; width: 300px">To avoid using three separate motors, we tried to replicate a side-to-side and up-down motion by combining mechanisms on one motor. This had several obvious flaws after further investigation.</div>
-<div style="position: relative; top: -140px"><img src='images/scan02.png' width='300px'></div>
-<div style="position: relative; top: -350px; left: 310px; width: 250px;">We looked into having a cam sliding mechanism that would allow rotation at different rates at different positions of the motor. We ditched the idea after it became clear the successfully implementating the cam slider would be difficult to implement and because better ideas came about.</div>
-<div style="position: relative; top: -330px; left: 75px"><img src='images/scan03.png' width='400px'></div>
-<div style="position: relative; top: -330px;">We came up with a mechanism that would allow for an up-down movement. However, we weren't sure if a spring loaded pin would add structural integrity without ruining the motion. We eventually replaced this idea with telescoping pipes, which did the same thing.</div>
-</p>
-
-<div style="position: relative; top: -325px"><h3>Mechanical Model</h3>
+<div style="position: relative; top: 0px"><h3>Mechanical Model</h3>
 <img src="images/mechmodel.png"></div>
 
-<div style="position: relative; top: -325px"><h3>First Iteration</h3></div>
-<div style="position: relative; top: -325px"><img src="images/iteration01-1.png" width="340px"><span style="position: relative; left: 10px"><img src="images/iteration01-2.png" width="340px"></span></div>
-<div style="position: relative; top: -335px">
+<div style="position: relative; top: 0px"><h3>First Iteration</h3></div>
+<div style="position: relative; top: 0px"><img src="images/iteration01-1.png" width="340px"><span style="position: relative; left: 10px"><img src="images/iteration01-2.png" width="340px"></span></div>
+<div style="position: relative; top: -10px">
 <span class="caption"  style="position: relative; left: 50px">Figure 1: Cardboard Iteration 1</span>
 <span class="caption" style="position: relative; left: 250px">Figure 2: Front View of Iteration 1</span></div>
-<div style="position: relative; top: -325px">
+<div style="position: relative; top: -0px">
 <p>This purpose of this iteration was to explore the potential of different mechanisms. This iteration was made of cardboard (and duct tape) and contained two servos (not in the picture) that were held in the small rectangular piece seen in Figure 2 and in a similar part that can’t be seen. The vision for this iteration was to have four degrees of freedom: Pitch, Roll, Yaw, and Heave. Only the mechanisms for Pitch, Yaw and Heave are included in this model.</p>
-<p>The hook seen in Figure 1 was intended to be connected to the head of the robot in some way in order to provide Pitch, however due to this iteration we were able to determine that this mechanism would not work for our purposes. Additionally, the circle seen in Figure 2 is part of a crank slider assembly to provide Yaw (primarily) and Heave (consequentially). We decided to abandon both mechanisms for our next iteration.</p></div>
+<p>The hook seen in Figure 1 was intended to be connected to the head of the robot internally in some way in order to provide Pitch, however due to this iteration we were able to determine that this mechanism would not work for our purposes. Additionally, the circle seen in Figure 2 is part of a crank slider assembly to provide Yaw (primarily) and Heave (consequentially). We decided to abandon both mechanisms for our next iteration.</p>
+</div>
 
-<div style="position: relative; top: -300px"><h3>Second Iteration</h3></div>
-<div style="position: relative; top: -300px"><img src="images/iteration02-1.png" width="340px">
+<div style="position: relative; top: 25px"><h3>Second Iteration</h3></div>
+<div style="position: relative; top: 25px"><img src="images/iteration02-1.png" width="340px">
 <span style="position: relative; left: 10px"><img src="images/iteration02-2.png" width="340px"></span></div>
-<div style="position: relative; top: -310px">
+<div style="position: relative; top: 15px">
 <span class="caption"  style="position: relative; left: 50px">Figure 3: Front View, Iteration 2</span>
 <span class="caption" style="position: relative; left: 250px">Figure 4: Close up of scotch yoke</span></div>
-<div style="position: relative; top: -300px">
-<p>Taking what we learned from Iteration 1, we completely redesigned our mechanisms. For this iteration, we also decided to drop a degree of freedom, deciding that Pitch was not an important enough motion for our dancing robot, especially with time constraints. This iteration is made of MDF and brass and aluminum tubes. </p>
-This iteration has three servos: one at the bottom providing Roll by rotating the entire upper assembly, one in the middle driving a scotch yoke to provide Heave, and one at the top providing Yaw.
-Once again, this iteration taught us a lot about how to improve the design. For starters, the brass and aluminum tubes used to guide and support the Heave motion did not slide as smoothly as desired, so we decided to abandon the telescoping aspect, and instead use nylon spacers and a single aluminum tube. Secondly, the holes to hold the tubes were too close to the edge of the MDF platforms, causing the corners to split and the integrity of the design to be compromised. To address this in the next iteration, we made the platforms a bit larger and the hole pattern smaller. 
-Next, the base holding the bottom servo was not intended for this project, but was handily available from a lab earlier in the semester. Therefore, the center of rotation of the bottom servo was not centered on the platform, leading to instability. Also, the square piece of MDF with the large circle in the center that is not doing anything was intended to support the lower platform, minimizing cross-forces on the bottom servo, allowing the maximum power and torque to go into the rotational motion desired. However, this was not implemented due to the base and the protrusion of the rods below the surface of the MDF platform. The base for the next iteration was designed for the purpose of this project and is much more stable and integratable with the support.
-We decided to make the wheel and yoke of the scotch yoke assembly out of delrin to reduce friction, as these surfaces slide together. 
-Finally, the upper servo, merely taped to the platform in this iteration, was mounted in an MDF support in the final iteration to provide stability.</div>
+<div style="position: relative; top: 25px">
+<p>Taking what we learned from Iteration 1, we completely redesigned our mechanisms. For this iteration, we also decided to drop a degree of freedom, deciding that Pitch was not an important enough motion for our dancing robot, especially with time constraints. This iteration is made of MDF and brass and aluminum tubes.</p>
+<p>This iteration has three servos: one at the bottom providing Roll by rotating the entire upper assembly, one in the middle driving a scotch yoke to provide Heave, and one at the top providing Yaw.</p>
+<p>Once again, this iteration taught us a lot about how to improve the design. For starters, the brass and aluminum tubes used to guide and support the Heave motion did not slide as smoothly as desired, so we decided to abandon the telescoping aspect, and instead use nylon spacers and a single aluminum tube. Secondly, the holes to hold the tubes were too close to the edge of the MDF platforms, causing the corners to split and the integrity of the design to be compromised. To address this in the next iteration, we made the platforms a bit larger and the hole pattern smaller.</p> 
+<p>Next, the base holding the bottom servo was not intended for this project, but was handily available from a lab earlier in the semester. Therefore, the center of rotation of the bottom servo was not centered on the platform, leading to instability. Also, the square piece of MDF with the large circle in the center that is not doing anything was intended to support the lower platform, minimizing cross-forces on the bottom servo, allowing the maximum power and torque to go into the rotational motion desired. However, this was not implemented due to the base and the protrusion of the rods below the surface of the MDF platform. The base for the next iteration was designed for the purpose of this project and is much more stable and integratable with the support.</p>
+<p>We decided to make the wheel and yoke of the scotch yoke assembly out of delrin to reduce friction, as these surfaces slide together.</p>
+<p>Finally, the upper servo, merely taped to the platform in this iteration, was mounted in an MDF support in the final iteration to provide stability.</p>
+</div>
 
-<div style="position: relative; top: -300px"><h3>Third and Final Iteration</h3></div>
+<div style="position: relative; top: 25px"><h3>Third Iteration (Final)</h3></div>
+<div style="position: relative; top: 25px"><img src="images/iteration03-1.png" width="340px"></div>
+<div style="position: relative; top: 25px"><span class="caption"  style="position: relative; left: 50px">Figure 5: Final Iteration - mid-way to completion</span></div>
+<div style="position: relative; top: 25px">
+<p>Figure 5 shows the first stages of the final iteration. The pieces of MDF with black tape supporting the bottom two layers of the assembly are temporary measures until the internal mechanisms are complete and the sides can be attached.</p>
+<p>In this iteration, the MDF platforms supporting the servos are now round instead of square, and have holes cut through them to allow the servo cables to pass through to the Arduino, which will be at ground-level. The Heave motion is supported with four aluminum rods that pass through nylon spacers in the upper platform, creating fewer moving parts and fewer failure points. Additionally, the tubes are attached to the bottom plate in a way that does not interfere with the support plate. We crimped the ends of the tubes and folded them to be parallel with the bottom surface of the plate.</p>
+<p>Next, the scotch yoke assembly is made out of laser-cut delrin, lowering the friction between the faces as the servo turns the wheel.</p>
+<p>The upper servo is mounted properly in an MDF support, and the lower platform is correctly supported by the MDF sheet. This allows the bottom servo to only exert a torsional force, and not compensate for cross forces.</p>
+<p>The skeleton structure that supports the penguin doll that forms the body of the robot is not shown in Figure 5, nor is the servo and mechanism that causes the penguin’s wings to flap. After iteration 2, we felt that we had adequate time and resources to compensate for the dropped degree of freedom by adding a flapping motion. This motion will give the robot a higher degree of character and interactivity, as well as more variety in its motions.</p>
+</div>
         </section>
         
       </div>
