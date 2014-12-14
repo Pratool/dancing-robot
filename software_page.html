@@ -24,11 +24,11 @@
 
         <section id="toolbar" class="clearfix">
           <a href="http://pratool.github.io/dancing-robot/" class="button">
-          <span style="position: relative; left: -20px; top: -12px">Home</span>
+          <span style="position: relative; left: +20px">Home</span>
           </a>
 
           <a href="http://pratool.github.io/dancing-robot/Overview.html" class="button">
-          <span style="position: relative; left: -20px; top: -12px">Overview</span>
+          <span style="position: relative; left: +10px">Overview</span>
           </a>
           
           <a href="http://pratool.github.io/dancing-robot/about.html" class="button">
@@ -72,7 +72,6 @@
         <h4>Smile detector trained:</h4>
 
           <p>We created a new smile classifier by using machine learning to train our computer to identify smiles.  We obtained a database of 20,000 labeled smiles from Olin Professor Paul Ruvolo and used a Python library called scikit-learn to generate a smile detection model using an algorithm called Logistic Regression. Essentially, it calculated the probability that the read image contained a smile and returned a generalized image of a smile.  When the program runs, the classifier compares the detected faces to the generalized image and calculates a log probability to determine how similar detected faces are to it.  It then returns the value which we set a threshold on for either smiling or not.  With this classifier, we were able to detect smiles reliably and produce working results.</p>
-          <br>
 
           <img src="images/generalizedSmile.png" style="width:290px;height:289px">
           <h4>Figure 2: The generalized image of a smile that the smile detector uses to compare detected faces to in order to determine if the person is smiling. This image was created from training 20,000 labeled images.</h4>
@@ -90,7 +89,7 @@
           <h4>Figure 3c:  An image from the video feed of the smile detector when a person is smiling. Note how the smile probability is above 1.0.</h4>
           <br>
 
-          <img src="images/SmileDetectorConsole.jpg" style="width:344px;height:276px">
+          <img src="images/smileDetectorConsole.jpg" style="width:344px;height:276px">
           <h4>Figure 3d. The console printout for figure 3c, when a person is smiling.</h4>
           <br>
 
@@ -98,11 +97,11 @@
 
           <p>There is some variability in the returned values.  For example, although the program correctly identified when Julian and Michelle were smiling, the returned values for Michelle were consistently lower than Julian’s. Because of that, the smile detection sometimes detected smiles on Julian when Julian wasn’t smiling, and sometimes failed to detect smiles on Michelle when Michelle was smiling. This problem could be solved by adjusting the smile probability threshold for each individual, but is not a practical solution if this robot is to be used by many people. Instead we set the threshold at a value that on average detects smiles for the majority of the people. We determined this number by the 20,000 smiling data we trained the model off of.</p>
 
-          <img src="/images/MichelleSmileDetector.png"style="width:634px;height:493px">
+          <img src="images/MichelleSmileDetector.png"style="width:634px;height:493px">
           <h4>Figure 4a: Picture of Michelle smiling, but a smile is not detected.</h4>
           <br>
 
-          <img src="/images/SmileDetectorConsole3.jpg"style="width:368px;height:288px">
+          <img src="images/SmileDetectorConsole3.jpg"style="width:368px;height:288px">
           <h4>Figure 4b. An image from the video feed of the smile detector.  Note how the percentages are different from figure 3b.</h4>
           <br>
 
