@@ -79,8 +79,6 @@ void loop() {
 //    servo1.attach(10);
     servo1.write(70);
     delay(3);
-    servo1.write(90);
-    delay(5);
     counter ++;
   }
   //flaps wings
