@@ -1,5 +1,18 @@
-Before running "smile_detector.py" check that the serial port is correctly named in the file.
+Upload Arduino dancing finite-state machine code.
+Turn on Raspberry Pi, wait until all scripts have run (~1 minute).
+On a linux machine open 3 terminal windows
+In the bash scripts below, replace 192.168.16.54 with current Raspberry Pi IP address.
 
-Upload "pyserial.ino" to an Arduino.
-Run "smile_detector.py" if on a laptop
-Run "rpi-facedetect.py" if on a Raspberry Pi
+Terminal 1
+----------
+roslaunch gscam raspi_nodelet.launch host:=192.168.16.54
+
+Terminal 2
+----------
+ssh pi@192.168.16.54
+raspberry
+python ~/documents/socket_server_serial.py
+
+Terminal 3
+----------
+python ~/catkin_ws/src/dancing_robot/scripts/mynode.py
