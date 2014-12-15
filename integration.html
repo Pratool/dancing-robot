@@ -67,6 +67,14 @@
               be classified. Once classified, the laptop also acts as a client and sends the
               classification information over to the Raspberry Pi (whether or not there are faces and
               if any of the faces are smiling).</p>
+			  <p>We also ran into problems powering all four servo motors using an Adafruit shield and
+			  a 12-volt 5-amp power supply. The Arduino frequently restarted due to overheating. Since
+			  we did not need to draw that much current and wanted to make the whole system portable,
+			  we switched to a 4-AAA battery pack (which provides 6 V) without a current regulator, so
+			  that the peak amperage could still be hit (when all of the servos move at once). We
+			  supplied the Raspberry Pi with a separate battery, a 4400 mAh rechargeable Lithium ion
+			  battery that outputs 5 volts at 1 amp. This prevented any overheating from occurring,
+			  even after 3 hours of use.</p>
               <h3>Iteration 3</h3>
               <p>In the third integration iteration, the Raspberry Pi recorded the video stream from
               the on-board Pi Camera module and detected faces and smiles from the video stream.
