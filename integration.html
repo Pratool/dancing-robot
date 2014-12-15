@@ -73,7 +73,9 @@
 			  we switched to a 4-AAA battery pack (which provides 6 V) without a current regulator, so
 			  that the peak amperage could still be hit (when all of the servos move at once). We
 			  supplied the Raspberry Pi with a separate battery, a 4400 mAh rechargeable Lithium ion
-			  battery that outputs 5 volts at 1 amp. This prevented any overheating from occurring,
+			  battery that outputs 5 volts at 1 amp. This separation prevented a high current draw from
+			  the Raspberry Pi, which an only safely output 200 milliamps without fear of the system
+			  shutting down. This also prevented any overheating from occurring,
 			  even after 3 hours of use.</p>
               <h3>Iteration 3</h3>
               <p>In the third integration iteration, the Raspberry Pi recorded the video stream from
