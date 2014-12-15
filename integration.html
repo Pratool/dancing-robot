@@ -53,18 +53,10 @@
 
         <section id="main_content">
           <h2>Integration</h2>
-              <h3>Iteration 1 and 2</h3>
-		      <p>In the first and second integration sessions, the Raspberry Pi was not used.
-              We did not expect to be able to integrate the Raspberry Pi into a portable
-              scheme.</p>
-              <h3>Iteration 3</h3>
-              <p>In the third integration iteration, the Raspberry Pi recorded the video stream from
-              the on-board Pi Camera module and detected faces and smiles from the video stream.
-              We utilized Python's built-in multi-threading capabilities. However, the Raspberry Pi
-              only has one core, so the multi-threading devolved into a very advanced instruction
-              scheduler. This forced the Raspberry Pi to either record video or classify the frames,
-              but not both at the same time because of the limits of Raspberry Pi's computing capabilities.</p>
-              <h3>Iteration 4</h3>
+			<h3>Iteration 4</h3>
+			  <p>In order to run the fourth iteration, a lot of firmware and software must be installed.
+			  This includes ROS (Robot Operating System), GStreamer, and pulling from specific GitHub
+			  repositories. The complete details can be found <a href="https://sites.google.com/site/comprobofall14/home/howto/setting-up-your-environment">here</a>.
               <p>In the fourth and last integration iteration, the Raspberry Pi sends over the video stream
               via GStreamer to a laptop that then runs the classification algorithms on the video frames.
               The Raspberry Pi is also set up to be a server and receives information about the
@@ -74,8 +66,22 @@
               CV Bridge, the laptop would then "decode" each image into OpenCV objects that could then
               be classified. Once classified, the laptop also acts as a client and sends the
               classification information over to the Raspberry Pi (whether or not there are faces and
-              if any of the faces are smiling).
-
+              if any of the faces are smiling).</p>
+              <h3>Iteration 3</h3>
+              <p>In the third integration iteration, the Raspberry Pi recorded the video stream from
+              the on-board Pi Camera module and detected faces and smiles from the video stream.
+              We utilized Python's built-in multi-threading capabilities. However, the Raspberry Pi
+              only has one core, so the multi-threading devolved into a very advanced instruction
+              scheduler. This forced the Raspberry Pi to either record video or classify the frames,
+              but not both at the same time because of the limits of Raspberry Pi's computing capabilities.</p>
+			  <h3>Iteration 1 and 2</h3>
+		      <p>In the first and second integration sessions, the Raspberry Pi was not used.
+              We did not expect to be able to integrate the Raspberry Pi into a portable
+              scheme. We simply used PySerial to communicate between the Arduino and the computer.
+			  There were minor glitches, including the fact that the data is sent over as Strings
+			  to the Arduino. This prevents the direct comparison between the integer finite states.
+			  Instead, we converted the integer finite states to be integers type-casted to Strings
+			  for comparison.</p>
         
       </div>
     </div>
